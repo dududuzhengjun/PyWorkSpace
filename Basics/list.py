@@ -31,7 +31,7 @@ motorcycles.remove(remove_motorcycles)
 print(motorcycles)
 print("I like ride "+remove_motorcycles)
 
-print("==========================华丽的分割线===========================")'''
+print("==========================华丽的分割线===========================")
 
 myfriend = ['刘德华','林青霞','泰勒斯威夫特','滨崎步','蕾哈娜','特朗普']
 myfriend.sort()
@@ -49,7 +49,48 @@ for value in range(1,9):
 print(list_value)
 
 
-print("==========================华丽的分割线===========================")
+print("==========================华丽的分割线===========================")'''
+#列表解析范例
 
-number_value = [squre**2 for squre in range(1,5)]
+#列出1~10
+number_value = [squre**2 for squre in range(1,11)]
 print(number_value)
+
+#列出1~10中大于等于4的数字的平方
+number_value = [squre**2 for squre in range(1,11) if squre>=4]
+print(number_value)
+
+# #实现两个列表中的元素逐一配对
+# num1 = ['x','y','z']
+# num2 = [1,2,3]
+# num3 = [(a,b) for a in num1 for b in num2]
+# print(num3)
+
+
+print('\n'.join([''.join(['%s*%s=%-2s '%(y,x,x*y) for y in range(1,x+1)]) for x in range(1,10)]))
+
+
+print(sum([sum2 for sum2 in range(1,1000001)]))
+
+jishu_list = []
+for jishu in range(1,11):
+    if jishu%2!=0:
+        print(jishu_list.append(jishu))
+
+
+
+#创建切片
+
+
+
+
+
+
+
+
+
+
+
+
+
+

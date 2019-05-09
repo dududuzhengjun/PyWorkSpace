@@ -75,11 +75,19 @@ print(sum([sum2 for sum2 in range(1,1000001)]))
 jishu_list = []
 for jishu in range(1,11):
     if jishu%2!=0:
-        print(jishu_list.append(jishu))
+        jishu_list.append(jishu)
+print(jishu_list)
 
 
 
 #创建切片
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+print(players[2:])
+
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:]
+print("My frined like:\n")
+print(friend_foods)
 
 
 

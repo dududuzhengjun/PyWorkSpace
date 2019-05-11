@@ -1,4 +1,5 @@
 #Author:Leva
+import time
 # week=['礼拜一','礼拜二','礼拜三','礼拜四','礼拜五','礼拜六','礼拜日']
 # number=int(input('请输入1-7的整数：'))
 # print('今天是'+week[number-1])
@@ -21,9 +22,23 @@ print(li2)
 4、del 列表名称[索引值] （补充）
 '''
 
-tu = ('a','b','c','d','e','f','g','h')
-print(tu[-2::-5])
+tu = (1,2,3)
+tu2 = (4,5,6)
+print(3 in tu2)
 
+
+
+
+for i in range(1,10):
+        for j in range(1,i+1):
+            print('{}*{}={}\t'.format(j,i,i*j),end='')
+        print()
+
+def test():
+    print("hello")
+
+
+test()
 
 
 

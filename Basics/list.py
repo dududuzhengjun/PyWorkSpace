@@ -90,8 +90,9 @@ print("My frined like:\n")
 print(friend_foods)
 
 
-
-
+def test():
+    print("cc")
+test()
 
 
 

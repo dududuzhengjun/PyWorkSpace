@@ -1,4 +1,4 @@
-'''#什么是列表
+"""#什么是列表
 ball = ['basketball','football','ppball','bigball','littleball']
 message = "I like play "+ball[1].title()+"."
 print(ball[0])
@@ -46,10 +46,10 @@ print('但是我还是喜欢bmw')
 list_value = []
 for value in range(1,9):
     list_value.append(value**2)
-print(list_value)
+print(list_value)"""
 
 
-print("==========================华丽的分割线===========================")'''
+print("==========================华丽的分割线===========================")
 #列表解析范例
 
 #列出1~10
@@ -65,9 +65,6 @@ print(number_value)
 # num2 = [1,2,3]
 # num3 = [(a,b) for a in num1 for b in num2]
 # print(num3)
-
-
-print('\n'.join([''.join(['%s*%s=%-2s '%(y,x,x*y) for y in range(1,x+1)]) for x in range(1,10)]))
 
 
 print(sum([sum2 for sum2 in range(1,1000001)]))
@@ -94,6 +91,8 @@ def test():
     print("cc")
 test()
 
+num_list = list(range(1,5))
+print(num_list)
 
 
 

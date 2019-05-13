@@ -1,5 +1,5 @@
 #Author:Leva
-import time
+import time,math
 # week=['礼拜一','礼拜二','礼拜三','礼拜四','礼拜五','礼拜六','礼拜日']
 # number=int(input('请输入1-7的整数：'))
 # print('今天是'+week[number-1])
@@ -36,10 +36,7 @@ for i in range(1,10):
 
 def test():
     print("hello")
-
-
 test()
-
 
 
 

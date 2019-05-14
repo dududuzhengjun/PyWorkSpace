@@ -12,7 +12,8 @@
 
 import random
 
-
+count = 0
+win_count = 0
 while True:
     print('''
 -------石头剪刀布游戏开始-----  
@@ -24,12 +25,14 @@ while True:
 
     if (x == 1 and y == 3) or (x == 2 and y == 1) or (x == 3 and y == 2):
         print('你输了,请继续')
-        break
     elif x == y:
         print('平局，请继续')
+    elif x==0:
+        print('下面是本次游戏你的胜率')
         break
     else:
         print('你赢了，请继续')
-        break
-else:print('你的胜率是：')
+        win_count +=1
+    count +=1
+print('\n你的胜率是：','%.2f%%' % (win_count/count * 100))
 

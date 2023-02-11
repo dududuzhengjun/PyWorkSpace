@@ -33,26 +33,30 @@ def login_wanweb (url,username,password):
     user_input = driver.find_element(by=By.XPATH, value='//input[@placeholder=\"请输入用户名\"]')
     pw_input = driver.find_element(by=By.XPATH, value='//input[@placeholder=\"请输入密码\"]')
     login_btn = driver.find_element(by=By.XPATH, value='//button[@type=\"submit\"]')
+
     # 输入用户名和密码，点击登录
     user_input.send_keys(username)
     pw_input.send_keys(password)
     print("输入账号名和密码")
     time.sleep(1)
     login_btn.click()
-    time.sleep(2)
+    time.sleep(5)
     print("登录成功")
-    application_btn = driver.find_element(by=By.XPATH,value='//*[@id="root"]/div/section/section/main/div[1]/div[2]/div/div/div/div/div/div/div/div[1]/div/div')
-
-    application_btn.click()
+    # application_btn = driver.find_element_by_xpath("//*[contains(text(),'最多跑一趟')]")
 
     return driver
 
-# def application ():
-#     # 实现wan_web申办业务
-#     application_btn = driver.find_element(by=By.XPATH, value='//*[@id="root"]/div/section/section/main/div[1]/div[2]/div/div/div/div/div/div/div/div[1]/div/div')
-#
-#     application_btn.click()
-#     return driver
+def application ():
+
+    # 实现wan_web申办业务
+
+    application_btn = driver.find_element(by=By.XPATH, value='//*[contains(text(),"最多跑一趟")]')
+    begin_application_btn = driver.find_element(by=By.XPATH, value='//button[contains(text(),"开始申办")]')
+
+    application_btn.click()
+    begin_application_btn.click()
+    return driver
+
 
 if __name__ == '__main__':
     # 定义目标URL信息
@@ -63,5 +67,5 @@ if __name__ == '__main__':
     }
     # 登录
     driver = login_wanweb(wan_web_url['url'], wan_web_url['username'], wan_web_url['password'])
-    # driver = application()
+    driver = application()
 

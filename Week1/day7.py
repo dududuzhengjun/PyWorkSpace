@@ -7,3 +7,4 @@
 @detail：Don't stop learning!!!
 @Motto：Sow nothing, reap nothing
 """
+## 停止懈怠

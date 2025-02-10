@@ -8,3 +8,6 @@
 @Motto：Sow nothing, reap nothing
 """
 ## 停止懈怠
+name = input("请输入你的名字：")
+age = input("请输入你的年龄：")
+print("你叫"+name+"，年龄"+age+"岁~")

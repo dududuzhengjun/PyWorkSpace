@@ -8,6 +8,11 @@
 @Motto：Sow nothing, reap nothing
 """
 ## 停止懈怠
-name = input("请输入你的名字：")
-age = input("请输入你的年龄：")
-print("你叫"+name+"，年龄"+age+"岁~")
+# 获取用户的名字
+name = input("请输入你的名字: ")
+
+# 获取用户的年龄，并将其转换为整数
+age = int(input("请输入你的年龄: "))
+
+# 打印输出个性化问候语
+print(f"你好，{name}！你今年{age}岁了！")
